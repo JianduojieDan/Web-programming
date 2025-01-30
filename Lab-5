@@ -1,0 +1,14 @@
+x = "jianduojie dan"
+num1 , num2 = 7 , 4
+add = num1 + num2
+sub = num1 - num2
+mul = num1 * num2
+div = num1 / num2
+print(add, sub, mul, div)
+print("first", num1 , num2)
+num1 , num2 = num2 , num1
+print("second", num1, num2)
+constent_PI = 3.1415926
+radius = 5
+area = pow(radius, 2) * constent_PI
+print("area", area)
