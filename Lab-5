@@ -1,3 +1,5 @@
+/* first program*/
+
 x = "jianduojie dan"
 num1 , num2 = 7 , 4
 add = num1 + num2
@@ -12,3 +14,13 @@ constent_PI = 3.1415926
 radius = 5
 area = pow(radius, 2) * constent_PI
 print("area", area)
+
+/*second program*/
+name = input ("Enter your name: ")
+age = int(input("Enter your age: "))
+print(f"Hi, {name}, you are {age} years old.")
+
+num1 , num2 , num3 = 1, 7 ,9
+
+print(num1+num2+num3, (num1 + num2 + num3) //3
+      , num1 * num2 * num3 , sep = "\n")
