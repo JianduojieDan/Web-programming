@@ -1,0 +1,41 @@
+#transform type
+intInput = int(input("Enter your number: "))
+FloatInput = float(input("Enter your float number: "))
+StringInput = str(input("Enter your string: "))
+
+
+print(StringInput)
+print(type(StringInput))
+StringInput_num = int(intInput)
+print(StringInput_num)
+print(type(StringInput_num))
+print("\n")
+
+
+print(StringInput)
+print(type(StringInput))
+StringInput_f = float(FloatInput)
+print(StringInput_f)
+print(type(StringInput_f))
+print("\n")
+
+
+#dictionary
+person = {
+    "name" : "jayson",
+    "age"  : 61,
+    "gender" : "male",
+    "job"  : "policeofficer"
+}
+print(person)
+print(type(person))
+print("\n")
+
+#sets operation
+s = {1, 2, 3, 4, 5}
+print(s)
+s.add(7)
+print(s)
+s.remove(2)
+print(s)
+
