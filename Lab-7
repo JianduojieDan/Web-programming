@@ -1,0 +1,28 @@
+
+#Print numbers from 1 to 10 using both for and while loops.
+
+for i in range (11):
+    if i == 0:
+        print("")
+    else:
+        print(i)
+
+
+j = 1
+while j <= 10:
+    print("   " + str(j))
+    j = j + 1
+
+
+#Use a for loop to iterate over the string "Python" and print each character.
+
+s = {"P", "y", "t", "h", "o", "n"}
+for k in s:
+    print(k)
+
+
+#Create a while loop that prints even numbers from 2 to 10.
+l = 2
+while l <= 10:
+    print("     " + str(l))
+    l = l + 2
