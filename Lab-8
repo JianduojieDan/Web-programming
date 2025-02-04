@@ -1,0 +1,21 @@
+#Write a function to calculate the square of a number.
+
+def square(num):
+    return pow(num, 2)
+print(square(5))
+
+#Create a function that takes a list of numbers and returns their sum.
+def sum_all(nums):
+    return sum(nums)
+print(sum_all([1,2,3,4,5]))
+
+
+#Implement a recursive function to calculate the Fibonacci sequence.
+def feb(n):
+    if n <= 1:
+        return n
+    return feb(n-1) + feb(n-2)
+print(feb(5))
+
+#Write a function to determine if a number is prime.
+print("i don't know how")
