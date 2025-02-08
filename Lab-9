@@ -1,0 +1,28 @@
+class CannotBe0(Exception):
+    def __init__(self, message = "0 is not accepted"):
+        self.message = message
+        super().__init__(self.message)
+def value_type_is_error(x):
+    if isinstance(x,(int,float)):
+        return x
+    elif x is str:
+        print(input() + "is not an valid data")
+    else:
+        raise ValueError(x + " is not a valid data")
+while True:
+    user_input = input("Enter your number: ").strip()
+
+    try:
+        x = int(input("Enter your num: "))
+        x = float(x)
+
+        if x == 0:
+            raise CannotBe0()
+        x = value_type_is_error(x)
+        print(f"Valid number entered: {x}")
+
+    except CannotBe0 as e:
+        print("Error", e)
+    except ValueError as e:
+        print("invalid input", e)
+
