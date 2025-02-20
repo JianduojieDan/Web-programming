@@ -1,0 +1,33 @@
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} is ({self.age}) years old"
+
+    def my_func(self):
+        print("Hello my name is " + self.name)
+
+
+
+p1 = Person("John",20)
+print(p1.age)
+print(p1.name)
+
+p3 = Person("John",20)
+print(p3)
+
+p2=Person("Joh12n" , 36)
+p2.my_func()
+
+class Person1:
+    def __init__(mysillyobject,name,age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+        
+    def my_func(abc):
+        print("Hello my name is " + abc.name)
+        
+p1 = Person1("John",20)
+p1.my_func()
