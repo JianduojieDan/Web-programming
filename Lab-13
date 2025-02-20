@@ -1,0 +1,60 @@
+import re
+
+# Lab Exercise 2: Matching at the Start of a String
+str1 = "Hello , this is dan"
+str2 = "I don't think this gonna work"
+
+pattern = r"Hello"
+match = re.match(pattern, str1)
+
+print("Apply re.match on str1:")
+if match:
+    print("Match found:", match.group())
+else:
+    print("No match found")
+
+match1 = re.match(pattern, str2)
+print("Apply re.match on str2:")
+if match1:
+    print("Match found:", match1.group())
+else:
+    print("No match found")
+
+search_str = re.search(pattern, str1)
+print("Apply re.search on str1:")
+if search_str:
+    print("Match found:", search_str.group())
+else:
+    print("No match found")
+
+search_str = re.search(pattern, str2)
+print("Apply re.search on str2:")
+if search_str:
+    print("Match found:", search_str.group())
+else:
+    print("No match found")
+
+# Lab Exercise 1: Finding Phone Numbers
+str3 = "Call me at 555-1234 or at the office line 555-5678. For emergencies, dial 555-9999"
+pattern_1 = r"\d{3}-\d{4}"
+
+phone_numbers = re.findall(pattern_1, str3)  # Fixed: Changed str to str3
+print("Phone numbers found:", phone_numbers)
+
+# Lab Exercise 3: Replacing Numbers with a Word
+str4 = "There are 3 apples, 15 oranges, and 256 bananas in the basket"
+pattern_3 = r"\d+"
+result = re.sub(pattern_3, "NUMBER", str4)
+print("Modified str4:", result)
+
+#Lab Exercise 4: Extracting Email Addresses
+str5 = "For more info, contact us at supprt@example.com or sales_information@example.com"
+pattern_2 = r"\b\w+@\w+\.\w+\b"
+emails = re.findall(pattern_2, str5)
+print("Emails found:", emails)
+
+#Lab Exercise 5: Finding Words that Start with a Vowel
+str6 = "An apple a day keeps the doctor away. Even elephants enjoy eating."
+pattern_4 = "\b[aeiouAEIOU]\w*\b"
+vowel_words = re.findall(pattern_4, str6)
+print("vowel words found:", vowel_words)
