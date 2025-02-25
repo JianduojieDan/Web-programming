@@ -1,0 +1,48 @@
+#Lab Exercise 1: Basic Text File Operations
+filename = "sample.txt"
+content = """Hello puthon.
+This is a test file to see if we can read and edit this file from IDE"""
+
+with open(filename, 'w') as file:
+    file.write(content)
+print(f"Content has beed written to {filename}")
+with open(filename, 'r') as file:
+    read_content = file.read()
+    print("Content read from file is: ", read_content)
+#Lab Exercise 2: Processing CSV Files (Writing and Reading)
+import csv
+
+filename = "sample.csv"
+
+data = [
+    ["Name", "Age", "City"],
+    ["Alice", "25", "New York"],
+    ["Bob", "25", "New York"],
+    ["Charlie", "25", "Chicago"],
+]
+
+with open(filename, "w", newline="", encoding="utf-8") as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+print(f"Content has been written to {filename}")
+
+print("Reading from file:", filename)
+with open(filename, "r", encoding="utf-8") as file:
+    read_content = file.read()
+    print("Content read from file is:\n", read_content)
+
+#Lab Exercise 3: Appending Data to an Existing File
+filename = "sample_text.txt"
+additional_text = "In this line is appended to the file.\n"
+
+with open(filename, "a") as file:
+    file.write(additional_text)
+
+print(f"Additional text has been appended to {filename}")
+
+with open(filename, "r") as file:
+    updated_content = file.read()
+
+print("Updated content of the file:")
+print(updated_content)
