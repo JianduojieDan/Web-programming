@@ -1,0 +1,30 @@
+#Lab 1: Basic Text Formatting
+
+<!DOCTYPE html>
+<html>
+<head>
+‹title>Lab 1 - Text Formatting</title>
+</head> <body>
+<h1>Introduction to HTML</h1>
+<h2>Why Learn HTML?</h2>
+<p>HTML is the foundation of all web pages.<br›
+It allows us to structure content and display it in a browser.</p>
+<hr>
+<h3>Basic Elements</h3>
+<h4>Headings and Paragraphs</h4>
+<h5>Text Styling</h5>
+<h6>Conclusion</h6>
+</body> </html>
+
+#Lab 2: Text Styling with Formatting Tags
+
+<!DOCTYPE html>
+<html>
+<head>
+‹title>Lab 2 - Text Styling</title>
+</head> <body>
+<p>This is a <strong>bold</strong>, ‹em›italic</em>, and <u>underlined</u> word.</p>
+<p>Mathematical Expression: x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup></р>
+<p>Chemical Formula: H<sub>2</sub>0 is water.</p>
+<p>Text formatting in HTML makes content more readable and organized. ‹/p>
+</body> </html>
