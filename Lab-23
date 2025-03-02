@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+</head>
+<body>
+<h1>Welcome to My Website</h1>
+<img src="example.jpg" alt="A beautiful landscpae" width="500" height="300">
+<h1> Listen to This Audio</h1>
+<source src="audio.mp3" type="audio/mpeg">
+Your browser does not support the audio element
+<h1>Watch This Video</h1>
+<video controls autoplay width="600" poster="thumbnall.jpg">
+  <source src="video.mp4" type="video.mp4">
+ Your broser does not support the video tag
+</video>
+</audio>
+</body>
+</html>
