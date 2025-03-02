@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+</head>
+<p>Here is the contact section of the page</p>
+<a href="http://www.google.com" target="_black">Open Example in New Tab</a>
+<a href="\n"></a>
+<a href="#top">Back to Top</a>
+</html>
